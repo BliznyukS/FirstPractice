@@ -6,9 +6,11 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Alphabet {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Alphabet main = new Alphabet();
-        System.out.println(main.check("abcdeFghijKlmnopqrstuvwxyz"));
+        // System.out.println(main.check("abcdeFghijKlmnopqrstuvwxyz"));
+        System.out.println('a' + 0);
+
 
     }
 
@@ -16,12 +18,12 @@ public class Alphabet {
 
         Set<Character> set = new HashSet<>();
 
-        for (int i = 0; i < input.length(); i++){
+        for (int i = 0; i < input.length(); i++) {
             set.add(input.charAt(i));
         }
 
-        for (int i = 0; i < 26; i++){
-            if (!set.contains('a' + i) && !set.contains('A' + i)){
+        for (int i = 0; i < 26; i++) {
+            if (!set.contains((char)('a' + i))&&!set.contains((char)('A' + i))){
                 return false;
             }
         }
