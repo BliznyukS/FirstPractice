@@ -23,7 +23,7 @@ public class Alphabet {
         }
 
         for (int i = 0; i < 26; i++) {
-            if (!set.contains((char)('a' + i))&&!set.contains((char)('A' + i))){
+            if (!set.contains((char) ('a' + i)) && !set.contains((char) ('A' + i))) {
                 return false;
             }
         }
